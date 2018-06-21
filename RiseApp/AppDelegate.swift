@@ -8,15 +8,30 @@
 
 import UIKit
 import Firebase
+import Swinject
+import SwinjectStoryboard
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let container = SwinjectStoryboard.defaultContainer
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if(UserDefaults.standard.bool(forKey: "UITest")){
+            uitest(window: window)
+        }else{
+            let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil, container: container)
+            window.rootViewController = storyboard.instantiateInitialViewController()
+        }
+        window.makeKeyAndVisible()
+        self.window = window
+        
         return true
     }
 
@@ -42,6 +57,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    private func uitest(window:UIWindow){
+        
+        if let storyboardName = UserDefaults.standard.string(forKey: "StoryboardName"){
+            let storyboard = SwinjectStoryboard.create(name: storyboardName, bundle: nil, container:container)
+            
+            if let viewControllerIdentifier = UserDefaults.standard.string(forKey: "StoryboardID"){
+                let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerIdentifier)
+                
+                if (viewController.navigationItem.title != nil) && !(viewController is UINavigationController){
+                    let navigationController = UINavigationController.init(rootViewController: viewController)
+                    window.rootViewController = navigationController
+                }else{
+                    window.rootViewController = viewController
+                }
+            }else{
+                window.rootViewController = storyboard.instantiateInitialViewController()
+            }
+        }
+    }
 
 }
 

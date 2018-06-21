@@ -9,16 +9,74 @@
 /* Begin PBXBuildFile section */
 		3322004D9C94C69927DF02D2 /* Pods_RiseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C9D21E8332ED665B1D1F2C /* Pods_RiseApp.framework */; };
 		404CCAAD20DB0B1600ED12C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 404CCAAC20DB0B1600ED12C2 /* GoogleService-Info.plist */; };
+		4094783020DB1F4B00B72B78 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094782F20DB1F4B00B72B78 /* Loader.swift */; };
+		4094783520DB1FB700B72B78 /* NumberSeperatorFormatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783220DB1FB700B72B78 /* NumberSeperatorFormatRule.swift */; };
+		4094783620DB1FB700B72B78 /* FormatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783320DB1FB700B72B78 /* FormatRule.swift */; };
+		4094783720DB1FB700B72B78 /* TextFieldFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783420DB1FB700B72B78 /* TextFieldFormatter.swift */; };
+		4094784420DB1FBD00B72B78 /* CharacterSetRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783920DB1FBD00B72B78 /* CharacterSetRule.swift */; };
+		4094784520DB1FBD00B72B78 /* ExactLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783A20DB1FBD00B72B78 /* ExactLengthRule.swift */; };
+		4094784620DB1FBD00B72B78 /* ConfirmationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783B20DB1FBD00B72B78 /* ConfirmationRule.swift */; };
+		4094784720DB1FBD00B72B78 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783C20DB1FBD00B72B78 /* Validator.swift */; };
+		4094784820DB1FBD00B72B78 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783D20DB1FBD00B72B78 /* RegexRule.swift */; };
+		4094784920DB1FBD00B72B78 /* LuhnCheckRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783E20DB1FBD00B72B78 /* LuhnCheckRule.swift */; };
+		4094784A20DB1FBD00B72B78 /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783F20DB1FBD00B72B78 /* EmailRule.swift */; };
+		4094784B20DB1FBD00B72B78 /* AlphaNumericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094784020DB1FBD00B72B78 /* AlphaNumericRule.swift */; };
+		4094784C20DB1FBD00B72B78 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094784120DB1FBD00B72B78 /* Rule.swift */; };
+		4094784D20DB1FBD00B72B78 /* MinimumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094784220DB1FBD00B72B78 /* MinimumLengthRule.swift */; };
+		4094784E20DB1FBD00B72B78 /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094784320DB1FBD00B72B78 /* AlphaRule.swift */; };
+		40B0734E20DB184600E64BBA /* RiseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B0734D20DB184600E64BBA /* RiseAppUITests.swift */; };
+		40B0735C20DB186200E64BBA /* RiseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B0735B20DB186200E64BBA /* RiseAppTests.swift */; };
 		40EF36ED20DAFC13007CA9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF36EC20DAFC13007CA9A8 /* AppDelegate.swift */; };
 		40EF36EF20DAFC13007CA9A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF36EE20DAFC13007CA9A8 /* ViewController.swift */; };
 		40EF36F220DAFC13007CA9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F020DAFC13007CA9A8 /* Main.storyboard */; };
 		40EF36F420DAFC14007CA9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F320DAFC14007CA9A8 /* Assets.xcassets */; };
 		40EF36F720DAFC14007CA9A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F520DAFC14007CA9A8 /* LaunchScreen.storyboard */; };
 		40EF370020DB0412007CA9A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF36FF20DB0412007CA9A8 /* Extensions.swift */; };
+		59BDD5F766028EC53A5F27E0 /* Pods_RiseAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB75B8DDB24CD6EB1E40B23 /* Pods_RiseAppTests.framework */; };
+		D896F8E1E99E2EE27AFCBFB6 /* Pods_RiseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BA7E3CE5FDDF77C9760A7 /* Pods_RiseAppUITests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		40B0735020DB184600E64BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EF36E120DAFC13007CA9A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40EF36E820DAFC13007CA9A8;
+			remoteInfo = RiseApp;
+		};
+		40B0735E20DB186200E64BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EF36E120DAFC13007CA9A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40EF36E820DAFC13007CA9A8;
+			remoteInfo = RiseApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2BB75B8DDB24CD6EB1E40B23 /* Pods_RiseAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		404CCAAC20DB0B1600ED12C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4094782F20DB1F4B00B72B78 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		4094783220DB1FB700B72B78 /* NumberSeperatorFormatRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSeperatorFormatRule.swift; sourceTree = "<group>"; };
+		4094783320DB1FB700B72B78 /* FormatRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatRule.swift; sourceTree = "<group>"; };
+		4094783420DB1FB700B72B78 /* TextFieldFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldFormatter.swift; sourceTree = "<group>"; };
+		4094783920DB1FBD00B72B78 /* CharacterSetRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetRule.swift; sourceTree = "<group>"; };
+		4094783A20DB1FBD00B72B78 /* ExactLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExactLengthRule.swift; sourceTree = "<group>"; };
+		4094783B20DB1FBD00B72B78 /* ConfirmationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationRule.swift; sourceTree = "<group>"; };
+		4094783C20DB1FBD00B72B78 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		4094783D20DB1FBD00B72B78 /* RegexRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
+		4094783E20DB1FBD00B72B78 /* LuhnCheckRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuhnCheckRule.swift; sourceTree = "<group>"; };
+		4094783F20DB1FBD00B72B78 /* EmailRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailRule.swift; sourceTree = "<group>"; };
+		4094784020DB1FBD00B72B78 /* AlphaNumericRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaNumericRule.swift; sourceTree = "<group>"; };
+		4094784120DB1FBD00B72B78 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		4094784220DB1FBD00B72B78 /* MinimumLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumLengthRule.swift; sourceTree = "<group>"; };
+		4094784320DB1FBD00B72B78 /* AlphaRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaRule.swift; sourceTree = "<group>"; };
+		40B0734B20DB184600E64BBA /* RiseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B0734D20DB184600E64BBA /* RiseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiseAppUITests.swift; sourceTree = "<group>"; };
+		40B0734F20DB184600E64BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B0735920DB186200E64BBA /* RiseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B0735B20DB186200E64BBA /* RiseAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiseAppTests.swift; sourceTree = "<group>"; };
+		40B0735D20DB186200E64BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40EF36E920DAFC13007CA9A8 /* RiseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EF36EC20DAFC13007CA9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40EF36EE20DAFC13007CA9A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,12 +85,33 @@
 		40EF36F620DAFC14007CA9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40EF36F820DAFC14007CA9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40EF36FF20DB0412007CA9A8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4C891A39D34EADFB3AF32BC0 /* Pods-RiseAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseAppTests/Pods-RiseAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		521682182D645062AED7E1E0 /* Pods-RiseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseApp/Pods-RiseApp.release.xcconfig"; sourceTree = "<group>"; };
+		616BA7E3CE5FDDF77C9760A7 /* Pods_RiseAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B005C0CDF824C930860899 /* Pods-RiseAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseAppTests/Pods-RiseAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1ED4E47E42C5A1D50A39C2B /* Pods-RiseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseApp/Pods-RiseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BA3A67DBC5AD826727E273F0 /* Pods-RiseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseAppUITests/Pods-RiseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D2099216310A25D3A4AF3375 /* Pods-RiseAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseAppUITests/Pods-RiseAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1C9D21E8332ED665B1D1F2C /* Pods_RiseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		40B0734820DB184600E64BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D896F8E1E99E2EE27AFCBFB6 /* Pods_RiseAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40B0735620DB186200E64BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59BDD5F766028EC53A5F27E0 /* Pods_RiseAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40EF36E620DAFC13007CA9A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +123,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4094783120DB1FB700B72B78 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				4094783220DB1FB700B72B78 /* NumberSeperatorFormatRule.swift */,
+				4094783320DB1FB700B72B78 /* FormatRule.swift */,
+				4094783420DB1FB700B72B78 /* TextFieldFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		4094783820DB1FBD00B72B78 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				4094783920DB1FBD00B72B78 /* CharacterSetRule.swift */,
+				4094783A20DB1FBD00B72B78 /* ExactLengthRule.swift */,
+				4094783B20DB1FBD00B72B78 /* ConfirmationRule.swift */,
+				4094783C20DB1FBD00B72B78 /* Validator.swift */,
+				4094783D20DB1FBD00B72B78 /* RegexRule.swift */,
+				4094783E20DB1FBD00B72B78 /* LuhnCheckRule.swift */,
+				4094783F20DB1FBD00B72B78 /* EmailRule.swift */,
+				4094784020DB1FBD00B72B78 /* AlphaNumericRule.swift */,
+				4094784120DB1FBD00B72B78 /* Rule.swift */,
+				4094784220DB1FBD00B72B78 /* MinimumLengthRule.swift */,
+				4094784320DB1FBD00B72B78 /* AlphaRule.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		40B0734C20DB184600E64BBA /* RiseAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40B0734D20DB184600E64BBA /* RiseAppUITests.swift */,
+				40B0734F20DB184600E64BBA /* Info.plist */,
+			);
+			path = RiseAppUITests;
+			sourceTree = "<group>";
+		};
+		40B0735A20DB186200E64BBA /* RiseAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				40B0735B20DB186200E64BBA /* RiseAppTests.swift */,
+				40B0735D20DB186200E64BBA /* Info.plist */,
+			);
+			path = RiseAppTests;
+			sourceTree = "<group>";
+		};
 		40EF36E020DAFC13007CA9A8 = {
 			isa = PBXGroup;
 			children = (
 				40EF36EB20DAFC13007CA9A8 /* RiseApp */,
+				40B0734C20DB184600E64BBA /* RiseAppUITests */,
+				40B0735A20DB186200E64BBA /* RiseAppTests */,
 				40EF36EA20DAFC13007CA9A8 /* Products */,
 				5F461946341775E6C0A9B767 /* Pods */,
 				742FB5D7CA1205D42C5E4E36 /* Frameworks */,
@@ -58,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				40EF36E920DAFC13007CA9A8 /* RiseApp.app */,
+				40B0734B20DB184600E64BBA /* RiseAppUITests.xctest */,
+				40B0735920DB186200E64BBA /* RiseAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,7 +209,10 @@
 		40EF36FE20DB0404007CA9A8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4094783820DB1FBD00B72B78 /* Validator */,
+				4094783120DB1FB700B72B78 /* Formatter */,
 				40EF36FF20DB0412007CA9A8 /* Extensions.swift */,
+				4094782F20DB1F4B00B72B78 /* Loader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -90,6 +222,10 @@
 			children = (
 				A1ED4E47E42C5A1D50A39C2B /* Pods-RiseApp.debug.xcconfig */,
 				521682182D645062AED7E1E0 /* Pods-RiseApp.release.xcconfig */,
+				4C891A39D34EADFB3AF32BC0 /* Pods-RiseAppTests.debug.xcconfig */,
+				85B005C0CDF824C930860899 /* Pods-RiseAppTests.release.xcconfig */,
+				D2099216310A25D3A4AF3375 /* Pods-RiseAppUITests.debug.xcconfig */,
+				BA3A67DBC5AD826727E273F0 /* Pods-RiseAppUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -98,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				F1C9D21E8332ED665B1D1F2C /* Pods_RiseApp.framework */,
+				2BB75B8DDB24CD6EB1E40B23 /* Pods_RiseAppTests.framework */,
+				616BA7E3CE5FDDF77C9760A7 /* Pods_RiseAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,6 +243,46 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		40B0734A20DB184600E64BBA /* RiseAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40B0735420DB184600E64BBA /* Build configuration list for PBXNativeTarget "RiseAppUITests" */;
+			buildPhases = (
+				10A228CB0F559DA33AAD3722 /* [CP] Check Pods Manifest.lock */,
+				40B0734720DB184600E64BBA /* Sources */,
+				40B0734820DB184600E64BBA /* Frameworks */,
+				40B0734920DB184600E64BBA /* Resources */,
+				7621F003563C8D9A1AAA41BF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40B0735120DB184600E64BBA /* PBXTargetDependency */,
+			);
+			name = RiseAppUITests;
+			productName = RiseAppUITests;
+			productReference = 40B0734B20DB184600E64BBA /* RiseAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		40B0735820DB186200E64BBA /* RiseAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40B0736020DB186200E64BBA /* Build configuration list for PBXNativeTarget "RiseAppTests" */;
+			buildPhases = (
+				DE9397E6EE5CA02AFC9EE84E /* [CP] Check Pods Manifest.lock */,
+				40B0735520DB186200E64BBA /* Sources */,
+				40B0735620DB186200E64BBA /* Frameworks */,
+				40B0735720DB186200E64BBA /* Resources */,
+				74B8C2CE229341A9F891D8D6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40B0735F20DB186200E64BBA /* PBXTargetDependency */,
+			);
+			name = RiseAppTests;
+			productName = RiseAppTests;
+			productReference = 40B0735920DB186200E64BBA /* RiseAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		40EF36E820DAFC13007CA9A8 /* RiseApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40EF36FB20DAFC14007CA9A8 /* Build configuration list for PBXNativeTarget "RiseApp" */;
@@ -134,6 +312,14 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = ArcheTech;
 				TargetAttributes = {
+					40B0734A20DB184600E64BBA = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 40EF36E820DAFC13007CA9A8;
+					};
+					40B0735820DB186200E64BBA = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 40EF36E820DAFC13007CA9A8;
+					};
 					40EF36E820DAFC13007CA9A8 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -153,11 +339,27 @@
 			projectRoot = "";
 			targets = (
 				40EF36E820DAFC13007CA9A8 /* RiseApp */,
+				40B0734A20DB184600E64BBA /* RiseAppUITests */,
+				40B0735820DB186200E64BBA /* RiseAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		40B0734920DB184600E64BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40B0735720DB186200E64BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40EF36E720DAFC13007CA9A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +374,108 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10A228CB0F559DA33AAD3722 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RiseAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B8C2CE229341A9F891D8D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RiseAppTests/Pods-RiseAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RiseAppTests/Pods-RiseAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7621F003563C8D9A1AAA41BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RiseAppUITests/Pods-RiseAppUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RiseAppUITests/Pods-RiseAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8F0779E701F816E09CB94FBB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,33 +503,113 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RiseApp/Pods-RiseApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RiseApp/Pods-RiseApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DE9397E6EE5CA02AFC9EE84E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RiseAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		40B0734720DB184600E64BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B0734E20DB184600E64BBA /* RiseAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40B0735520DB186200E64BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B0735C20DB186200E64BBA /* RiseAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40EF36E520DAFC13007CA9A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4094783720DB1FB700B72B78 /* TextFieldFormatter.swift in Sources */,
 				40EF370020DB0412007CA9A8 /* Extensions.swift in Sources */,
+				4094784B20DB1FBD00B72B78 /* AlphaNumericRule.swift in Sources */,
+				4094784420DB1FBD00B72B78 /* CharacterSetRule.swift in Sources */,
+				4094784720DB1FBD00B72B78 /* Validator.swift in Sources */,
 				40EF36EF20DAFC13007CA9A8 /* ViewController.swift in Sources */,
+				4094784520DB1FBD00B72B78 /* ExactLengthRule.swift in Sources */,
+				4094784920DB1FBD00B72B78 /* LuhnCheckRule.swift in Sources */,
+				4094783620DB1FB700B72B78 /* FormatRule.swift in Sources */,
+				4094783520DB1FB700B72B78 /* NumberSeperatorFormatRule.swift in Sources */,
+				4094784820DB1FBD00B72B78 /* RegexRule.swift in Sources */,
 				40EF36ED20DAFC13007CA9A8 /* AppDelegate.swift in Sources */,
+				4094783020DB1F4B00B72B78 /* Loader.swift in Sources */,
+				4094784620DB1FBD00B72B78 /* ConfirmationRule.swift in Sources */,
+				4094784C20DB1FBD00B72B78 /* Rule.swift in Sources */,
+				4094784D20DB1FBD00B72B78 /* MinimumLengthRule.swift in Sources */,
+				4094784A20DB1FBD00B72B78 /* EmailRule.swift in Sources */,
+				4094784E20DB1FBD00B72B78 /* AlphaRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40B0735120DB184600E64BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40EF36E820DAFC13007CA9A8 /* RiseApp */;
+			targetProxy = 40B0735020DB184600E64BBA /* PBXContainerItemProxy */;
+		};
+		40B0735F20DB186200E64BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40EF36E820DAFC13007CA9A8 /* RiseApp */;
+			targetProxy = 40B0735E20DB186200E64BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		40EF36F020DAFC13007CA9A8 /* Main.storyboard */ = {
@@ -247,6 +631,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		40B0735220DB184600E64BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2099216310A25D3A4AF3375 /* Pods-RiseAppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUB6VDUNHQ;
+				INFOPLIST_FILE = RiseAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArcheTechnologies.RiseAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiseApp;
+			};
+			name = Debug;
+		};
+		40B0735320DB184600E64BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3A67DBC5AD826727E273F0 /* Pods-RiseAppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUB6VDUNHQ;
+				INFOPLIST_FILE = RiseAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArcheTechnologies.RiseAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiseApp;
+			};
+			name = Release;
+		};
+		40B0736120DB186200E64BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C891A39D34EADFB3AF32BC0 /* Pods-RiseAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUB6VDUNHQ;
+				INFOPLIST_FILE = RiseAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArcheTechnologies.RiseAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiseApp.app/RiseApp";
+			};
+			name = Debug;
+		};
+		40B0736220DB186200E64BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B005C0CDF824C930860899 /* Pods-RiseAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUB6VDUNHQ;
+				INFOPLIST_FILE = RiseAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArcheTechnologies.RiseAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiseApp.app/RiseApp";
+			};
+			name = Release;
+		};
 		40EF36F920DAFC14007CA9A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +868,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		40B0735420DB184600E64BBA /* Build configuration list for PBXNativeTarget "RiseAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B0735220DB184600E64BBA /* Debug */,
+				40B0735320DB184600E64BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40B0736020DB186200E64BBA /* Build configuration list for PBXNativeTarget "RiseAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B0736120DB186200E64BBA /* Debug */,
+				40B0736220DB186200E64BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		40EF36E420DAFC13007CA9A8 /* Build configuration list for PBXProject "RiseApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
