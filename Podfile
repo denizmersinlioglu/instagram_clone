@@ -11,6 +11,7 @@ def default_pods
     pod 'SwinjectStoryboard', "~> 2"
     pod 'MaterialComponents', "~> 55"
     pod 'lottie-ios', "~> 2.5"
+    pod 'expanding-collection'
 end
 
 target 'RiseApp' do

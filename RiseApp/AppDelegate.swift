@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if(UserDefaults.standard.bool(forKey: "UITest")){
             uitest(window: window)
         }else{
-            let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil, container: container)
+            let storyboard = SwinjectStoryboard.create(name: "ExpandingViewControllerFeed", bundle: nil, container: container)
             window.rootViewController = storyboard.instantiateInitialViewController()
         }
         window.makeKeyAndVisible()
