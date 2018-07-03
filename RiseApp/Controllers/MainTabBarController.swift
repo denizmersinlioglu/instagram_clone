@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController{
 
         let layout = UICollectionViewFlowLayout()
         let userProfileCollectionViewController = UserProfileCollectionViewController(collectionViewLayout: layout)
-        
+        let signUpViewControlller = SignUpViewController()
         let navController = UINavigationController(rootViewController: userProfileCollectionViewController)
         
         navController.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")
