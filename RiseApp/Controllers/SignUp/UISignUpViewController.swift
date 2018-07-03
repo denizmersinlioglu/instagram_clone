@@ -1,19 +1,19 @@
 //
-//  ViewController.swift
+//  UISignUpViewController.swift
 //  RiseApp
 //
-//  Created by Deniz Mersinlioğlu on 21.06.2018.
+//  Created by Deniz Mersinlioğlu on 3.07.2018.
 //  Copyright © 2018 ArcheTech. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class SignUpViewController: UIViewController {
-
+class SignUpViewController: UIViewController{
+    
     let plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "plus_photo").withRenderingMode(.alwaysOriginal), for: .normal)
+        button.addTarget(self, action: #selector(handlePlusPhoto), for: .touchUpInside)
         return button
     }()
     
@@ -75,7 +75,7 @@ class SignUpViewController: UIViewController {
     }
     
     fileprivate func setupInputFields(){
-  
+        
         let stackView = UIStackView(arrangedSubviews: [emailTextField, userNameTextField, passwordTextField, signUpButton])
         
         stackView.distribution = .fillEqually
@@ -85,31 +85,19 @@ class SignUpViewController: UIViewController {
         view.addSubview(stackView)
         
         stackView.anchor(top: plusPhotoButton.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 20, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 200)
-        
-        
     }
     
-    @objc func handleSignUp(){
-        // TODO: Add validators
-        guard let email = emailTextField.text, !email.isEmpty,
-            let username = userNameTextField.text, !username.isEmpty,
-            let password = passwordTextField.text, !password.isEmpty else {return}
-       
-        Auth.auth().createUser(withEmail: email, password: password) { (result: AuthDataResult?, error: Error?) in
-            if let error = error{
-                print("fail to create user:", error)
-                return
-            }
-            
-            print("Succesfull adding user", result?.user.uid ?? "")
-        }
+    @objc func handlePlusPhoto(){
+        let imagePickerControler = UIImagePickerController()
+        imagePickerControler.delegate = self
+        imagePickerControler.allowsEditing = true
+        present(imagePickerControler, animated: true, completion: nil)
     }
     
     @objc func handleTextInputChange(){
         let isFormValid = !(emailTextField.text?.isEmpty)! && !(userNameTextField.text?.isEmpty)! && !(passwordTextField.text?.isEmpty)!
-      
+        
         signUpButton.isEnabled = isFormValid
         signUpButton.backgroundColor = isFormValid ? UIColor.rgb(red: 17, green: 154, blue: 237) : UIColor.rgb(red: 149, green: 204, blue: 244)
     }
 }
-

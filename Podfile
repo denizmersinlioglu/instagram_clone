@@ -7,10 +7,7 @@ def default_pods
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'Firebase/Storage'
-    pod 'Swinject', "~> 2"
-    pod 'SwinjectStoryboard', "~> 2"
     pod 'MaterialComponents', "~> 55"
-    pod 'lottie-ios', "~> 2.5"
     pod 'expanding-collection'
 end
 

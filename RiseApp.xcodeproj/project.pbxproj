@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3322004D9C94C69927DF02D2 /* Pods_RiseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C9D21E8332ED665B1D1F2C /* Pods_RiseApp.framework */; };
+		4044A5FE20EB68B300FE4E46 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4044A5FD20EB68B300FE4E46 /* UIView.swift */; };
+		4044A60020EB68CF00FE4E46 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4044A5FF20EB68CF00FE4E46 /* UIWindow.swift */; };
+		4044A60220EB68E000FE4E46 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4044A60120EB68E000FE4E46 /* UIColor.swift */; };
 		404CCAAD20DB0B1600ED12C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 404CCAAC20DB0B1600ED12C2 /* GoogleService-Info.plist */; };
+		4060B00020EAD5D50020AC27 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060AFFF20EAD5D50020AC27 /* MainTabBarController.swift */; };
+		4060B00220EAD7900020AC27 /* UserProfileCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060B00120EAD7900020AC27 /* UserProfileCollectionViewController.swift */; };
+		4060B00420EADC280020AC27 /* UISignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060B00320EADC280020AC27 /* UISignUpViewController.swift */; };
 		4069B1B920DBB35600A4012F /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069B1B820DBB35600A4012F /* Module.swift */; };
 		4069B1BB20DBB39300A4012F /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069B1BA20DBB39300A4012F /* SwinjectStoryboard+Setup.swift */; };
 		40916C1120DC530400E3700B /* FoldingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40916C1020DC530400E3700B /* FoldingTableViewCell.swift */; };
@@ -48,7 +54,7 @@
 		40EF36F220DAFC13007CA9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F020DAFC13007CA9A8 /* Main.storyboard */; };
 		40EF36F420DAFC14007CA9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F320DAFC14007CA9A8 /* Assets.xcassets */; };
 		40EF36F720DAFC14007CA9A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F520DAFC14007CA9A8 /* LaunchScreen.storyboard */; };
-		40EF370020DB0412007CA9A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF36FF20DB0412007CA9A8 /* Extensions.swift */; };
+		40EF370020DB0412007CA9A8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF36FF20DB0412007CA9A8 /* String.swift */; };
 		59BDD5F766028EC53A5F27E0 /* Pods_RiseAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB75B8DDB24CD6EB1E40B23 /* Pods_RiseAppTests.framework */; };
 		D896F8E1E99E2EE27AFCBFB6 /* Pods_RiseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BA7E3CE5FDDF77C9760A7 /* Pods_RiseAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,7 +80,13 @@
 		2AEEB1AE092994F8BD45AE4A /* Pods-RiseApp.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseApp.mock.xcconfig"; path = "Pods/Target Support Files/Pods-RiseApp/Pods-RiseApp.mock.xcconfig"; sourceTree = "<group>"; };
 		2BB75B8DDB24CD6EB1E40B23 /* Pods_RiseAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		360EE8915038F4F8AC9D23DB /* Pods-RiseAppTests.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseAppTests.mock.xcconfig"; path = "Pods/Target Support Files/Pods-RiseAppTests/Pods-RiseAppTests.mock.xcconfig"; sourceTree = "<group>"; };
+		4044A5FD20EB68B300FE4E46 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		4044A5FF20EB68CF00FE4E46 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		4044A60120EB68E000FE4E46 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		404CCAAC20DB0B1600ED12C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4060AFFF20EAD5D50020AC27 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4060B00120EAD7900020AC27 /* UserProfileCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCollectionViewController.swift; sourceTree = "<group>"; };
+		4060B00320EADC280020AC27 /* UISignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISignUpViewController.swift; sourceTree = "<group>"; };
 		4069B1B820DBB35600A4012F /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		4069B1BA20DBB39300A4012F /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
 		40916C1020DC530400E3700B /* FoldingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingTableViewCell.swift; sourceTree = "<group>"; };
@@ -120,7 +132,7 @@
 		40EF36F320DAFC14007CA9A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40EF36F620DAFC14007CA9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40EF36F820DAFC14007CA9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40EF36FF20DB0412007CA9A8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		40EF36FF20DB0412007CA9A8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4C891A39D34EADFB3AF32BC0 /* Pods-RiseAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseAppTests/Pods-RiseAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		521682182D645062AED7E1E0 /* Pods-RiseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseApp/Pods-RiseApp.release.xcconfig"; sourceTree = "<group>"; };
 		616BA7E3CE5FDDF77C9760A7 /* Pods_RiseAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +172,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4044A5FC20EB68A500FE4E46 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40EF36FF20DB0412007CA9A8 /* String.swift */,
+				4044A5FD20EB68B300FE4E46 /* UIView.swift */,
+				4044A5FF20EB68CF00FE4E46 /* UIWindow.swift */,
+				4044A60120EB68E000FE4E46 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4060B00520EADC5F0020AC27 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				40EF36EE20DAFC13007CA9A8 /* SignUpViewController.swift */,
+				4060B00320EADC280020AC27 /* UISignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		40916C1220DC53F300E3700B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +204,9 @@
 		40916C1920DC5EBE00E3700B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				40EF36EE20DAFC13007CA9A8 /* SignUpViewController.swift */,
+				4060B00520EADC5F0020AC27 /* SignUp */,
+				4060AFFF20EAD5D50020AC27 /* MainTabBarController.swift */,
+				4060B00120EAD7900020AC27 /* UserProfileCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -316,9 +350,9 @@
 		40EF36FE20DB0404007CA9A8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4044A5FC20EB68A500FE4E46 /* Extensions */,
 				4094783820DB1FBD00B72B78 /* Validator */,
 				4094783120DB1FB700B72B78 /* Formatter */,
-				40EF36FF20DB0412007CA9A8 /* Extensions.swift */,
 				4094782F20DB1F4B00B72B78 /* Loader.swift */,
 				4069B1B820DBB35600A4012F /* Module.swift */,
 				40916C1720DC5B1C00E3700B /* FoldingCell.swift */,
@@ -523,11 +557,8 @@
 				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -541,11 +572,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -569,11 +597,8 @@
 				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -585,11 +610,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -629,11 +651,8 @@
 				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -645,11 +664,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -699,18 +715,21 @@
 			files = (
 				40916C1120DC530400E3700B /* FoldingTableViewCell.swift in Sources */,
 				40A76DE020DC661B00497ABC /* DemoViewController.swift in Sources */,
+				4060B00020EAD5D50020AC27 /* MainTabBarController.swift in Sources */,
 				40A76DEA20DC6AF700497ABC /* CollectionViewHelper.swift in Sources */,
 				4094783720DB1FB700B72B78 /* TextFieldFormatter.swift in Sources */,
 				4069B1BB20DBB39300A4012F /* SwinjectStoryboard+Setup.swift in Sources */,
 				40A76DE420DC69EF00497ABC /* Images.swift in Sources */,
-				40EF370020DB0412007CA9A8 /* Extensions.swift in Sources */,
+				40EF370020DB0412007CA9A8 /* String.swift in Sources */,
 				4094784B20DB1FBD00B72B78 /* AlphaNumericRule.swift in Sources */,
+				4060B00420EADC280020AC27 /* UISignUpViewController.swift in Sources */,
 				4094784420DB1FBD00B72B78 /* CharacterSetRule.swift in Sources */,
 				40A76DE620DC6A3700497ABC /* AnimatingBarButton.swift in Sources */,
 				4094784720DB1FBD00B72B78 /* Validator.swift in Sources */,
 				40EF36EF20DAFC13007CA9A8 /* SignUpViewController.swift in Sources */,
 				40A76DEE20DC6B7700497ABC /* ConfigurationHelper.swift in Sources */,
 				4094784520DB1FBD00B72B78 /* ExactLengthRule.swift in Sources */,
+				4044A5FE20EB68B300FE4E46 /* UIView.swift in Sources */,
 				4094784920DB1FBD00B72B78 /* LuhnCheckRule.swift in Sources */,
 				40A76DE220DC669C00497ABC /* DemoTableViewController.swift in Sources */,
 				40A76DEC20DC6B1300497ABC /* StoryboardHelper.swift in Sources */,
@@ -720,6 +739,9 @@
 				4094783520DB1FB700B72B78 /* NumberSeperatorFormatRule.swift in Sources */,
 				40916C1620DC566100E3700B /* FeedTableViewController.swift in Sources */,
 				4094784820DB1FBD00B72B78 /* RegexRule.swift in Sources */,
+				4044A60020EB68CF00FE4E46 /* UIWindow.swift in Sources */,
+				4044A60220EB68E000FE4E46 /* UIColor.swift in Sources */,
+				4060B00220EAD7900020AC27 /* UserProfileCollectionViewController.swift in Sources */,
 				40EF36ED20DAFC13007CA9A8 /* AppDelegate.swift in Sources */,
 				4094783020DB1F4B00B72B78 /* Loader.swift in Sources */,
 				4094784620DB1FBD00B72B78 /* ConfirmationRule.swift in Sources */,

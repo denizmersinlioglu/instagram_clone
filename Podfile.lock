@@ -1,22 +1,22 @@
 PODS:
   - expanding-collection (2.1.0)
-  - Firebase/Auth (5.3.0):
+  - Firebase/Auth (5.4.0):
     - Firebase/CoreOnly
-    - FirebaseAuth (= 5.0.1)
-  - Firebase/CoreOnly (5.3.0):
-    - FirebaseCore (= 5.0.4)
-  - Firebase/Database (5.3.0):
+    - FirebaseAuth (= 5.0.2)
+  - Firebase/CoreOnly (5.4.0):
+    - FirebaseCore (= 5.0.5)
+  - Firebase/Database (5.4.0):
     - Firebase/CoreOnly
-    - FirebaseDatabase (= 5.0.1)
-  - Firebase/Storage (5.3.0):
+    - FirebaseDatabase (= 5.0.2)
+  - Firebase/Storage (5.4.0):
     - Firebase/CoreOnly
     - FirebaseStorage (= 3.0.0)
-  - FirebaseAuth (5.0.1):
+  - FirebaseAuth (5.0.2):
     - FirebaseCore (~> 5.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (5.0.4):
+  - FirebaseCore (5.0.5):
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-  - FirebaseDatabase (5.0.1):
+  - FirebaseDatabase (5.0.2):
     - FirebaseCore (~> 5.0)
     - leveldb-library (~> 1.18)
   - FirebaseStorage (3.0.0):
@@ -27,7 +27,6 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GTMSessionFetcher/Core (1.1.15)
   - leveldb-library (1.20)
-  - lottie-ios (2.5.0)
   - MaterialComponents (55.5.0):
     - MaterialComponents/ActivityIndicator (= 55.5.0)
     - "MaterialComponents/ActivityIndicator+ColorThemer (= 55.5.0)"
@@ -466,21 +465,15 @@ PODS:
   - MotionTransitioning (5.0.0)
   - Nimble (7.1.2)
   - Quick (1.3.0)
-  - Swinject (2.4.1)
-  - SwinjectStoryboard (2.0.1):
-    - Swinject (~> 2.4)
 
 DEPENDENCIES:
   - expanding-collection
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Storage
-  - lottie-ios (~> 2.5)
   - MaterialComponents (~> 55)
   - Nimble (~> 7)
   - Quick (~> 1)
-  - Swinject (~> 2)
-  - SwinjectStoryboard (~> 2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -493,7 +486,6 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - leveldb-library
-    - lottie-ios
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
@@ -502,20 +494,17 @@ SPEC REPOS:
     - MotionTransitioning
     - Nimble
     - Quick
-    - Swinject
-    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   expanding-collection: 6dadfb6777d94c7487ca471604d6916e7a3ba81b
-  Firebase: 68afeeb05461db02d7c9e3215cda28068670f4aa
-  FirebaseAuth: 463b8ce33bd5d05f706dcd4615499e3212b4132b
-  FirebaseCore: 62f1b792a49bb9e8b4073f24606d2c93ffc352f0
-  FirebaseDatabase: 482bad9c2abd422bb2321194fb8c937e67426a89
+  Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
+  FirebaseAuth: 096e457cdd4274412a66c4a35874787e411f5a03
+  FirebaseCore: 42b3267233bd21a5abd54117ccc38ca3dd0f8e83
+  FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
   FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
-  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   MaterialComponents: 68cc8d56b82799b087240c0e5e48f6a2ab0587ee
   MDFInternationalization: e355b0cebecf53d60233bd267084e49366c82513
   MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
@@ -524,9 +513,7 @@ SPEC CHECKSUMS:
   MotionTransitioning: 23d25edc2f4606efb922403cbac6d81af37aa33a
   Nimble: 3835ba9f459daa6b347f8a8e110aaae8ca1920a8
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
-  Swinject: f7f15a9672e99328c1f07f277091087917215700
-  SwinjectStoryboard: ad2529218a1504cc888040ee56c13d7cb1cc7998
 
-PODFILE CHECKSUM: 1905980a385f3e56e0e6c068b12961660cf85738
+PODFILE CHECKSUM: 23efbe8092abfe1950410529f179bf602df4166e
 
 COCOAPODS: 1.5.3
