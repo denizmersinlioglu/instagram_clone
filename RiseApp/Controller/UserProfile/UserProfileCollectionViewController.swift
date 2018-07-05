@@ -21,6 +21,31 @@ class UserProfileCollectionViewController: UICollectionViewController, UICollect
         
         collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headerID")
         collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        
+        setupLogoutButton()
+    }
+    
+    fileprivate func setupLogoutButton(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "gear").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleLogOut))
+    }
+    
+    @objc func handleLogOut(){
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        alertController.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { (_) in
+            do{
+                try Auth.auth().signOut()
+                
+            }catch let singOutErr{
+                print("Failed to sign out", singOutErr)
+            }
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
+        }))
+        
+        present(alertController, animated: true, completion: nil)
+    
     }
     
     fileprivate func fetchUser() {
@@ -37,6 +62,7 @@ class UserProfileCollectionViewController: UICollectionViewController, UICollect
             print("Failed to fetch user:", err)
         }
     }
+    
 }
 
 extension UserProfileCollectionViewController{

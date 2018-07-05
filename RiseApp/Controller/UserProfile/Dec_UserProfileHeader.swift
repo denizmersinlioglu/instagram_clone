@@ -20,8 +20,8 @@ class UserProfileHeader: UICollectionViewCell {
     }
     
     let profileImageView: UIImageView = {
-        let iv = UIImageView()
-        return iv
+        let imageView = UIImageView()
+        return imageView
     }()
     
     let gridButton: UIButton = {
