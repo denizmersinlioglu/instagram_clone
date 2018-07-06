@@ -37,6 +37,10 @@ extension SignUpViewController {
                         return
                     }
                     print("successfully save the user to database")
+                    
+                    guard let mainTabBarController = UIApplication.shared.keyWindow?.rootViewController as? MainTabBarController else {return}
+                    mainTabBarController.setupViewControllers()
+                    self.dismiss(animated: true, completion: nil)
                 })
             })
         }
@@ -63,7 +67,10 @@ extension SignUpViewController {
                 print("succesfully saved user profile image to:", strURL)
             })
         })
-        
+    }
+    
+    @objc func handleShowLogin(){
+       _ = navigationController?.popViewController(animated: true)
     }
 }
 

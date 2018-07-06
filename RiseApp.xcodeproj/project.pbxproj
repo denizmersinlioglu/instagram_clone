@@ -12,7 +12,9 @@
 		4044A60020EB68CF00FE4E46 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4044A5FF20EB68CF00FE4E46 /* UIWindow.swift */; };
 		4044A60220EB68E000FE4E46 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4044A60120EB68E000FE4E46 /* UIColor.swift */; };
 		404CCAAD20DB0B1600ED12C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 404CCAAC20DB0B1600ED12C2 /* GoogleService-Info.plist */; };
-		4056EF0320EEB34000287D42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056EF0220EEB34000287D42 /* LoginViewController.swift */; };
+		405498BB20EEC8E9002D5629 /* PhotoSelectorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405498BA20EEC8E9002D5629 /* PhotoSelectorCollectionViewController.swift */; };
+		4056EF0320EEB34000287D42 /* LoginViewControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056EF0220EEB34000287D42 /* LoginViewControllerUI.swift */; };
+		4056EF0520EEBAB000287D42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056EF0420EEBAB000287D42 /* LoginViewController.swift */; };
 		405C7C1620EBE2EB0040F996 /* Dec_UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C7C1520EBE2EB0040F996 /* Dec_UserProfileHeader.swift */; };
 		405C7C1920EC1AD20040F996 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C7C1820EC1AD20040F996 /* User.swift */; };
 		405C7C1B20EC1E620040F996 /* Fun_UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C7C1A20EC1E620040F996 /* Fun_UserProfileHeader.swift */; };
@@ -86,7 +88,9 @@
 		4044A5FF20EB68CF00FE4E46 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		4044A60120EB68E000FE4E46 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		404CCAAC20DB0B1600ED12C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4056EF0220EEB34000287D42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		405498BA20EEC8E9002D5629 /* PhotoSelectorCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCollectionViewController.swift; sourceTree = "<group>"; };
+		4056EF0220EEB34000287D42 /* LoginViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUI.swift; sourceTree = "<group>"; };
+		4056EF0420EEBAB000287D42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		405C7C1520EBE2EB0040F996 /* Dec_UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dec_UserProfileHeader.swift; sourceTree = "<group>"; };
 		405C7C1820EC1AD20040F996 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		405C7C1A20EC1E620040F996 /* Fun_UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fun_UserProfileHeader.swift; sourceTree = "<group>"; };
@@ -187,10 +191,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		405498B920EEC8D6002D5629 /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				405498BA20EEC8E9002D5629 /* PhotoSelectorCollectionViewController.swift */,
+			);
+			path = AddPhoto;
+			sourceTree = "<group>";
+		};
 		4056EF0120EEB32800287D42 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				4056EF0220EEB34000287D42 /* LoginViewController.swift */,
+				4056EF0420EEBAB000287D42 /* LoginViewController.swift */,
+				4056EF0220EEB34000287D42 /* LoginViewControllerUI.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -233,6 +246,7 @@
 		40916C1920DC5EBE00E3700B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				405498B920EEC8D6002D5629 /* AddPhoto */,
 				4056EF0120EEB32800287D42 /* Login */,
 				405C7C1220EBE2720040F996 /* UserProfile */,
 				4060B00520EADC5F0020AC27 /* SignUp */,
@@ -745,6 +759,7 @@
 			files = (
 				40916C1120DC530400E3700B /* FoldingTableViewCell.swift in Sources */,
 				40A76DE020DC661B00497ABC /* DemoViewController.swift in Sources */,
+				4056EF0520EEBAB000287D42 /* LoginViewController.swift in Sources */,
 				4060B00020EAD5D50020AC27 /* MainTabBarController.swift in Sources */,
 				40A76DEA20DC6AF700497ABC /* CollectionViewHelper.swift in Sources */,
 				4094783720DB1FB700B72B78 /* TextFieldFormatter.swift in Sources */,
@@ -771,7 +786,8 @@
 				4094784820DB1FBD00B72B78 /* RegexRule.swift in Sources */,
 				405C7C1B20EC1E620040F996 /* Fun_UserProfileHeader.swift in Sources */,
 				4044A60020EB68CF00FE4E46 /* UIWindow.swift in Sources */,
-				4056EF0320EEB34000287D42 /* LoginViewController.swift in Sources */,
+				4056EF0320EEB34000287D42 /* LoginViewControllerUI.swift in Sources */,
+				405498BB20EEC8E9002D5629 /* PhotoSelectorCollectionViewController.swift in Sources */,
 				4044A60220EB68E000FE4E46 /* UIColor.swift in Sources */,
 				4060B00220EAD7900020AC27 /* UserProfileCollectionViewController.swift in Sources */,
 				40EF36ED20DAFC13007CA9A8 /* AppDelegate.swift in Sources */,

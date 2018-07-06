@@ -9,10 +9,21 @@
 import UIKit
 import Firebase
 
-class MainTabBarController: UITabBarController{
+class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
     
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        let index = viewControllers?.index(of: viewController)
+        
+        let layout = UICollectionViewFlowLayout()
+        let photoSelectorCVC = PhotoSelectorCollectionViewController(collectionViewLayout: layout)
+        let navController = UINavigationController(rootViewController: photoSelectorCVC)
+        present(navController, animated: true, completion: nil)
+        return index != 2
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.delegate = self
         
         if Auth.auth().currentUser == nil{
             DispatchQueue.main.async {
@@ -22,17 +33,51 @@ class MainTabBarController: UITabBarController{
             }
             return
         }
+        setupViewControllers()
+    }
+    
+    func setupViewControllers(){
+        let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: UserProfileCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+        //Home
+//        let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"))
+        
+        //Search
+        let searchNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "search_unselected"), selectedImage: #imageLiteral(resourceName: "search_selected"))
+        
+        //Plus
+        let plusNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "plus_unselected"), selectedImage: #imageLiteral(resourceName: "plus_unselected"))
 
+        //Likes
+        let likeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selectedImage: #imageLiteral(resourceName: "like_selected"))
+        
+        //User Profile
         let layout = UICollectionViewFlowLayout()
         let userProfileCollectionViewController = UserProfileCollectionViewController(collectionViewLayout: layout)
-        let signUpViewControlller = SignUpViewController()
-        let navController = UINavigationController(rootViewController: userProfileCollectionViewController)
+        let userProfileNavController = UINavigationController(rootViewController: userProfileCollectionViewController)
         
-        navController.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")
-        navController.tabBarItem.selectedImage = #imageLiteral(resourceName: "profile_selected")
+        userProfileNavController.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")
+        userProfileNavController.tabBarItem.selectedImage = #imageLiteral(resourceName: "profile_selected")
         
         tabBar.tintColor = .black
         
-        viewControllers = [navController, UIViewController()]
+        viewControllers = [homeNavController,
+                           searchNavController,
+                           plusNavController,
+                           likeNavController,
+                           userProfileNavController]
+        
+        // Modify tab bar insets
+        guard let items = tabBar.items else {return}
+        for item in items{
+            item.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
+        }
+    }
+    
+    fileprivate func templateNavController(unselectedImage: UIImage, selectedImage: UIImage, rootViewController: UIViewController = UIViewController()) -> UINavigationController{
+        let viewController = rootViewController
+        let navController = UINavigationController(rootViewController: viewController)
+        navController.tabBarItem.image = unselectedImage
+        navController.tabBarItem.selectedImage = selectedImage
+        return navController
     }
 }
