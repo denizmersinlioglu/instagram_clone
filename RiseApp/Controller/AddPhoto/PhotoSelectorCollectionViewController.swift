@@ -17,6 +17,7 @@ class PhotoSelectorCollectionViewController: UICollectionViewController, UIColle
     var selectedImage: UIImage?
     var images = [UIImage]()
     var assets = [PHAsset]()
+    var header: PhotoSelectorHeader?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,13 +60,10 @@ class PhotoSelectorCollectionViewController: UICollectionViewController, UIColle
                         DispatchQueue.main.async {
                             self.collectionView?.reloadData()
                         }
-                        
                     }
                 })
             }
         }
-        
-       
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -84,7 +82,10 @@ class PhotoSelectorCollectionViewController: UICollectionViewController, UIColle
     }
     
     @objc func handleNext(){
-        print("Handling next")
+        let sharePhotoController = SharePhotoController()
+        sharePhotoController.selectedImage = header?.photoImageView.image
+        navigationController?.pushViewController(sharePhotoController, animated: true)
+        
     }
 }
 
@@ -93,7 +94,10 @@ extension PhotoSelectorCollectionViewController{
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedImage = images[indexPath.item]
         collectionView.reloadData()
+        let indexPath = IndexPath(item: 0, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 1, left: 0, bottom: 0, right: 0)
     }
@@ -105,6 +109,7 @@ extension PhotoSelectorCollectionViewController{
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerID, for: indexPath) as! PhotoSelectorHeader
+        self.header = header
         header.photoImageView.image = selectedImage
         if let selectedImage = selectedImage, let index = images.index(of: selectedImage){
             let selectedAsset = assets[index]
@@ -112,6 +117,7 @@ extension PhotoSelectorCollectionViewController{
             let targetSize = CGSize(width: 600, height: 600)
             imageManager.requestImage(for: selectedAsset, targetSize: targetSize, contentMode: .aspectFill, options: nil) { (image, info) in
                 header.photoImageView.image = image
+                
             }
         }
         return header
@@ -124,6 +130,7 @@ extension PhotoSelectorCollectionViewController{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (view.frame.width - 3) / 4
         return CGSize(width: width, height: width)
