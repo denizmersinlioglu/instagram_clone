@@ -9,10 +9,11 @@
 import UIKit
 import Firebase
 
-class UserProfileCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class UserProfileController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
     var user: User?
+    var posts = [Post]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +21,31 @@ class UserProfileCollectionViewController: UICollectionViewController, UICollect
         fetchUser()
         
         collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headerID")
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(UserProfilePostCell.self, forCellWithReuseIdentifier: cellId)
         
         setupLogoutButton()
+        
+        fetchPosts()
+    }
+    
+    fileprivate func fetchPosts(){
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let ref = Database.database().reference().child("posts").child(uid)
+        ref.observeSingleEvent(of: .value, andPreviousSiblingKeyWith: { (snapshot, metadata) in
+            guard let dictionaries = snapshot.value as? [String: Any] else {return}
+            dictionaries.forEach({ (key,value) in
+                //print("key \(key), value \(value)")
+                
+                guard let dictionary = value as? [String: Any] else {return}
+                let post = Post(dictionary: dictionary)
+                self.posts.append(post)
+            })
+            
+            self.collectionView?.reloadData()
+            
+        }) { (err) in
+            print("failed to fetch posts",err)
+        }
     }
     
     fileprivate func setupLogoutButton(){
@@ -35,7 +58,7 @@ class UserProfileCollectionViewController: UICollectionViewController, UICollect
         alertController.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { (_) in
             do{
                 try Auth.auth().signOut()
-                let loginVC = LoginViewController()
+                let loginVC = LoginController()
                 let navController = UINavigationController(rootViewController: loginVC)
                 self.present(navController, animated: true, completion: nil)
             }catch let singOutErr{
@@ -67,7 +90,7 @@ class UserProfileCollectionViewController: UICollectionViewController, UICollect
     
 }
 
-extension UserProfileCollectionViewController{
+extension UserProfileController{
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerID", for: indexPath) as! UserProfileHeader
@@ -80,12 +103,12 @@ extension UserProfileCollectionViewController{
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return posts.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        cell.backgroundColor = .purple
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! UserProfilePostCell
+        cell.post = posts[indexPath.item]
         return cell
     }
     

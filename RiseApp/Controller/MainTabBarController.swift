@@ -14,10 +14,12 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         let index = viewControllers?.index(of: viewController)
         
-        let layout = UICollectionViewFlowLayout()
-        let photoSelectorCVC = PhotoSelectorCollectionViewController(collectionViewLayout: layout)
-        let navController = UINavigationController(rootViewController: photoSelectorCVC)
-        present(navController, animated: true, completion: nil)
+        if index == 2{
+            let layout = UICollectionViewFlowLayout()
+            let photoSelectorCVC = PhotoSelectorController(collectionViewLayout: layout)
+            let navController = UINavigationController(rootViewController: photoSelectorCVC)
+            present(navController, animated: true, completion: nil)
+        }
         return index != 2
     }
     override func viewDidLoad() {
@@ -27,7 +29,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
         
         if Auth.auth().currentUser == nil{
             DispatchQueue.main.async {
-                let loginVC = LoginViewController()
+                let loginVC = LoginController()
                 let navigationController = UINavigationController(rootViewController: loginVC)
                 self.present(navigationController, animated: true, completion: nil)
             }
@@ -37,7 +39,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
     }
     
     func setupViewControllers(){
-        let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: UserProfileCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+        let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: UserProfileController(collectionViewLayout: UICollectionViewFlowLayout()))
         //Home
 //        let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"))
         
@@ -52,7 +54,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
         
         //User Profile
         let layout = UICollectionViewFlowLayout()
-        let userProfileCollectionViewController = UserProfileCollectionViewController(collectionViewLayout: layout)
+        let userProfileCollectionViewController = UserProfileController(collectionViewLayout: layout)
         let userProfileNavController = UINavigationController(rootViewController: userProfileCollectionViewController)
         
         userProfileNavController.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")

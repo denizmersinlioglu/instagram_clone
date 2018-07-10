@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignUpController.swift
 //  RiseApp
 //
 //  Created by Deniz Mersinlioğlu on 21.06.2018.
@@ -9,8 +9,51 @@
 import UIKit
 import Firebase
 
-extension SignUpViewController {
+extension SignUpController {
+    
+    // MARK: UI
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = .white
+        view.addSubview(plusPhotoButton)
+        
+        view.addSubview(alreadyHaveAccountButton)
+        alreadyHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
+        
+        plusPhotoButton.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 40, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 140, height: 140)
+        plusPhotoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        view.addSubview(emailTextField)
+        
+        setupInputFields()
+    }
+    
+    fileprivate func setupInputFields(){
+        let stackView = UIStackView(arrangedSubviews: [emailTextField, userNameTextField, passwordTextField, signUpButton])
+        stackView.distribution = .fillEqually
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        view.addSubview(stackView)
+        stackView.anchor(top: plusPhotoButton.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 20, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 200)
+    }
+    
+    @objc func handlePlusPhoto(){
+        let imagePickerControler = UIImagePickerController()
+        imagePickerControler.delegate = self
+        imagePickerControler.allowsEditing = true
+        present(imagePickerControler, animated: true, completion: nil)
+    }
+    
+    @objc func handleTextInputChange(){
+        let isFormValid = !(emailTextField.text?.isEmpty)! && !(userNameTextField.text?.isEmpty)! && !(passwordTextField.text?.isEmpty)!
+        
+        signUpButton.isEnabled = isFormValid
+        signUpButton.backgroundColor = isFormValid ? UIColor.rgb(red: 17, green: 154, blue: 237) : UIColor.rgb(red: 149, green: 204, blue: 244)
+    }
 
+    // MARK: Server Side
     @objc func handleSignUp(){
         // TODO: Add validators
         guard let email = emailTextField.text, !email.isEmpty,
@@ -24,9 +67,9 @@ extension SignUpViewController {
                 return
             }
             guard let image = self.plusPhotoButton.imageView?.image else {return}
+            guard let uid = result?.user.uid else {return}
             
             self.uploading(img: image, completion: { (url) in
-                guard let uid = result?.user.uid else {return}
                 
                 let dictionaryValues = ["username": username, "profileImageUrl": url]
                 let values = [uid: dictionaryValues]
@@ -53,13 +96,19 @@ extension SignUpViewController {
         
         guard let uploadImageData = UIImagePNGRepresentation((img)) else {return}
         
-        storeImageReference.putData(uploadImageData, metadata: nil, completion: { (metaData, error) in
+        storeImageReference.putData(uploadImageData, metadata: nil, completion: { (metaData, err) in
+            if let err = err{
+                print("fail to save user profile image", err)
+                return
+            }
+            
+            print("succesfully saved user profile image")
             storeImageReference.downloadURL(completion: { (url, err) in
-                
                 if let err = err{
-                    print("fail to save user profile image", err)
+                    print("fail to get saved image url", err)
                     return
                 }
+                
                 if let urlText = url?.absoluteString {
                     strURL = urlText
                     completion(strURL)
@@ -74,7 +123,7 @@ extension SignUpViewController {
     }
 }
 
-extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+extension SignUpController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage{

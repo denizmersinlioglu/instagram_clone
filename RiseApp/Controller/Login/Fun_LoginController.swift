@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  LoginController.swift
 //  RiseApp
 //
 //  Created by Deniz Mersinlioğlu on 5.07.2018.
@@ -9,13 +9,37 @@
 import UIKit
 import Firebase
 
-extension LoginViewController {
+extension LoginController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        navigationController?.isNavigationBarHidden = true
+        view.addSubview(dontHaveAccountButton)
+        dontHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
+        
+        view.addSubview(logoContainerView)
+        logoContainerView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 150)
+        
+        setupInputFields()
+    }
+    
+    fileprivate func setupInputFields(){
+        let stackView = UIStackView(arrangedSubviews: [emailTextField,passwordTextField,loginButton])
+        stackView.distribution = .fillEqually
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        
+        view.addSubview(stackView)
+        stackView.anchor(top: logoContainerView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 40, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 140)
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
     
     @objc func handleShowSignUp(){
-        let signUpVC = SignUpViewController()
+        let signUpVC = SignUpController()
         navigationController?.pushViewController(signUpVC, animated: true)
     }
     

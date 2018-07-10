@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginController: UIViewController {
     
     let logoContainerView: UIView = {
         let view = UIView()
@@ -55,29 +55,6 @@ class LoginViewController: UIViewController {
         button.isEnabled = false
         return button
     }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        navigationController?.isNavigationBarHidden = true
-        view.addSubview(dontHaveAccountButton)
-        dontHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
-        
-        view.addSubview(logoContainerView)
-        logoContainerView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 150)
-        
-        setupInputFields()
-    }
-    
-    fileprivate func setupInputFields(){
-        let stackView = UIStackView(arrangedSubviews: [emailTextField,passwordTextField,loginButton])
-        stackView.distribution = .fillEqually
-        stackView.axis = .vertical
-        stackView.spacing = 10
-        
-        view.addSubview(stackView)
-        stackView.anchor(top: logoContainerView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 40, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 140)
-    }
     
     let dontHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)

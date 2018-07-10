@@ -1,5 +1,5 @@
 //
-//  PhotoSelectorViewController.swift
+//  PhotoSelectorController.swift
 //  RiseApp
 //
 //  Created by Deniz Mersinlioğlu on 6.07.2018.
@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-class PhotoSelectorCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class PhotoSelectorController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     fileprivate let cellID = "cellID"
     fileprivate let headerID = "headerID"
@@ -89,7 +89,7 @@ class PhotoSelectorCollectionViewController: UICollectionViewController, UIColle
     }
 }
 
-extension PhotoSelectorCollectionViewController{
+extension PhotoSelectorController{
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedImage = images[indexPath.item]
