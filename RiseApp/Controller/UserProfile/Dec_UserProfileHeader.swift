@@ -13,14 +13,15 @@ class UserProfileHeader: UICollectionViewCell {
     // MARK: - Decleration
     var user: User?{
         didSet{
-            fetchProfileImage()
+            guard let profileImageUrl = user?.profileImageUrl else {return}
+            profileImageView.loadImage(urlString: profileImageUrl)
             guard let username = user?.username else {return}
             usernameLabel.text = username
         }
     }
     
-    let profileImageView: UIImageView = {
-        let imageView = UIImageView()
+    let profileImageView: CustomImageView = {
+        let imageView = CustomImageView()
         return imageView
     }()
     

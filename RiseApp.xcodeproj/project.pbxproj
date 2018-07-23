@@ -24,8 +24,6 @@
 		4060B00020EAD5D50020AC27 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060AFFF20EAD5D50020AC27 /* MainTabBarController.swift */; };
 		4060B00220EAD7900020AC27 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060B00120EAD7900020AC27 /* UserProfileController.swift */; };
 		4060B00420EADC280020AC27 /* Dec_SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060B00320EADC280020AC27 /* Dec_SignUpViewController.swift */; };
-		40916C1120DC530400E3700B /* FoldingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40916C1020DC530400E3700B /* FoldingTableViewCell.swift */; };
-		40916C1620DC566100E3700B /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40916C1520DC566100E3700B /* FeedTableViewController.swift */; };
 		40916C1820DC5B1C00E3700B /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40916C1720DC5B1C00E3700B /* FoldingCell.swift */; };
 		4094783020DB1F4B00B72B78 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094782F20DB1F4B00B72B78 /* Loader.swift */; };
 		4094783520DB1FB700B72B78 /* NumberSeperatorFormatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094783220DB1FB700B72B78 /* NumberSeperatorFormatRule.swift */; };
@@ -42,23 +40,16 @@
 		4094784C20DB1FBD00B72B78 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094784120DB1FBD00B72B78 /* Rule.swift */; };
 		4094784D20DB1FBD00B72B78 /* MinimumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094784220DB1FBD00B72B78 /* MinimumLengthRule.swift */; };
 		4094784E20DB1FBD00B72B78 /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094784320DB1FBD00B72B78 /* AlphaRule.swift */; };
-		40A76DD620DC64C000497ABC /* FoldingFeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A76DD520DC64C000497ABC /* FoldingFeedStoryboard.storyboard */; };
-		40A76DD920DC652D00497ABC /* ExpandingViewControllerFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A76DD820DC652D00497ABC /* ExpandingViewControllerFeed.storyboard */; };
-		40A76DDC20DC655700497ABC /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A76DDB20DC655700497ABC /* DemoCollectionViewCell.xib */; };
-		40A76DDE20DC65AB00497ABC /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DDD20DC65AB00497ABC /* DemoCollectionViewCell.swift */; };
-		40A76DE020DC661B00497ABC /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DDF20DC661B00497ABC /* DemoViewController.swift */; };
-		40A76DE220DC669C00497ABC /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DE120DC669C00497ABC /* DemoTableViewController.swift */; };
 		40A76DE420DC69EF00497ABC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DE320DC69EF00497ABC /* Images.swift */; };
-		40A76DE620DC6A3700497ABC /* AnimatingBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DE520DC6A3700497ABC /* AnimatingBarButton.swift */; };
-		40A76DE820DC6A6B00497ABC /* Rotetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DE720DC6A6B00497ABC /* Rotetable.swift */; };
-		40A76DEA20DC6AF700497ABC /* CollectionViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DE920DC6AF700497ABC /* CollectionViewHelper.swift */; };
-		40A76DEC20DC6B1300497ABC /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DEB20DC6B1300497ABC /* StoryboardHelper.swift */; };
-		40A76DEE20DC6B7700497ABC /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76DED20DC6B7700497ABC /* ConfigurationHelper.swift */; };
 		40B0734E20DB184600E64BBA /* RiseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B0734D20DB184600E64BBA /* RiseAppUITests.swift */; };
 		40B0735C20DB186200E64BBA /* RiseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B0735B20DB186200E64BBA /* RiseAppTests.swift */; };
 		40BE0A6120F56681006D2E20 /* Dec_SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE0A6020F56681006D2E20 /* Dec_SharePhotoController.swift */; };
 		40BE0A6320F56BAD006D2E20 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE0A6220F56BAD006D2E20 /* Post.swift */; };
 		40BE0A6520F56D55006D2E20 /* UserProfilePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE0A6420F56D55006D2E20 /* UserProfilePostCell.swift */; };
+		40DDEB59210661E8003C2BBF /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDEB58210661E8003C2BBF /* CustomImageView.swift */; };
+		40DDEB5D210666D7003C2BBF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDEB5C210666D7003C2BBF /* HomeController.swift */; };
+		40DDEB5F21066864003C2BBF /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDEB5E21066864003C2BBF /* HomePostCell.swift */; };
+		40DDEB6121068F09003C2BBF /* FirebaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDEB6021068F09003C2BBF /* FirebaseUtils.swift */; };
 		40EF36ED20DAFC13007CA9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF36EC20DAFC13007CA9A8 /* AppDelegate.swift */; };
 		40EF36EF20DAFC13007CA9A8 /* Fun_SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF36EE20DAFC13007CA9A8 /* Fun_SignUpViewController.swift */; };
 		40EF36F220DAFC13007CA9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F020DAFC13007CA9A8 /* Main.storyboard */; };
@@ -106,8 +97,6 @@
 		4060AFFF20EAD5D50020AC27 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4060B00120EAD7900020AC27 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		4060B00320EADC280020AC27 /* Dec_SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dec_SignUpViewController.swift; sourceTree = "<group>"; };
-		40916C1020DC530400E3700B /* FoldingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingTableViewCell.swift; sourceTree = "<group>"; };
-		40916C1520DC566100E3700B /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		40916C1720DC5B1C00E3700B /* FoldingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 		4094782F20DB1F4B00B72B78 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		4094783220DB1FB700B72B78 /* NumberSeperatorFormatRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSeperatorFormatRule.swift; sourceTree = "<group>"; };
@@ -124,18 +113,7 @@
 		4094784120DB1FBD00B72B78 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		4094784220DB1FBD00B72B78 /* MinimumLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumLengthRule.swift; sourceTree = "<group>"; };
 		4094784320DB1FBD00B72B78 /* AlphaRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaRule.swift; sourceTree = "<group>"; };
-		40A76DD520DC64C000497ABC /* FoldingFeedStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoldingFeedStoryboard.storyboard; sourceTree = "<group>"; };
-		40A76DD820DC652D00497ABC /* ExpandingViewControllerFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExpandingViewControllerFeed.storyboard; sourceTree = "<group>"; };
-		40A76DDB20DC655700497ABC /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
-		40A76DDD20DC65AB00497ABC /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
-		40A76DDF20DC661B00497ABC /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		40A76DE120DC669C00497ABC /* DemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
 		40A76DE320DC69EF00497ABC /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		40A76DE520DC6A3700497ABC /* AnimatingBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingBarButton.swift; sourceTree = "<group>"; };
-		40A76DE720DC6A6B00497ABC /* Rotetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotetable.swift; sourceTree = "<group>"; };
-		40A76DE920DC6AF700497ABC /* CollectionViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHelper.swift; sourceTree = "<group>"; };
-		40A76DEB20DC6B1300497ABC /* StoryboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
-		40A76DED20DC6B7700497ABC /* ConfigurationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationHelper.swift; sourceTree = "<group>"; };
 		40B0734B20DB184600E64BBA /* RiseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B0734D20DB184600E64BBA /* RiseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiseAppUITests.swift; sourceTree = "<group>"; };
 		40B0734F20DB184600E64BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,6 +123,10 @@
 		40BE0A6020F56681006D2E20 /* Dec_SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dec_SharePhotoController.swift; sourceTree = "<group>"; };
 		40BE0A6220F56BAD006D2E20 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		40BE0A6420F56D55006D2E20 /* UserProfilePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePostCell.swift; sourceTree = "<group>"; };
+		40DDEB58210661E8003C2BBF /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		40DDEB5C210666D7003C2BBF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		40DDEB5E21066864003C2BBF /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		40DDEB6021068F09003C2BBF /* FirebaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtils.swift; sourceTree = "<group>"; };
 		40EF36E920DAFC13007CA9A8 /* RiseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EF36EC20DAFC13007CA9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40EF36EE20DAFC13007CA9A8 /* Fun_SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fun_SignUpViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +181,7 @@
 				4044A5FD20EB68B300FE4E46 /* UIView.swift */,
 				4044A5FF20EB68CF00FE4E46 /* UIWindow.swift */,
 				4044A60120EB68E000FE4E46 /* UIColor.swift */,
+				40DDEB6021068F09003C2BBF /* FirebaseUtils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +247,7 @@
 		40916C1920DC5EBE00E3700B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				40DDEB5B210666C3003C2BBF /* Home */,
 				405498B920EEC8D6002D5629 /* AddPhoto */,
 				4056EF0120EEB32800287D42 /* Login */,
 				405C7C1220EBE2720040F996 /* UserProfile */,
@@ -310,50 +294,6 @@
 			path = Validator;
 			sourceTree = "<group>";
 		};
-		40A76DD320DC646600497ABC /* FeedOptions */ = {
-			isa = PBXGroup;
-			children = (
-				40A76DD720DC651300497ABC /* ExpandingViewControllers */,
-				40A76DD420DC647300497ABC /* FoldingTableView */,
-			);
-			path = FeedOptions;
-			sourceTree = "<group>";
-		};
-		40A76DD420DC647300497ABC /* FoldingTableView */ = {
-			isa = PBXGroup;
-			children = (
-				40916C1520DC566100E3700B /* FeedTableViewController.swift */,
-				40916C1020DC530400E3700B /* FoldingTableViewCell.swift */,
-				40A76DD520DC64C000497ABC /* FoldingFeedStoryboard.storyboard */,
-			);
-			path = FoldingTableView;
-			sourceTree = "<group>";
-		};
-		40A76DD720DC651300497ABC /* ExpandingViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				40A76DDA20DC654A00497ABC /* Cells */,
-				40A76DD820DC652D00497ABC /* ExpandingViewControllerFeed.storyboard */,
-				40A76DDF20DC661B00497ABC /* DemoViewController.swift */,
-				40A76DE120DC669C00497ABC /* DemoTableViewController.swift */,
-				40A76DE520DC6A3700497ABC /* AnimatingBarButton.swift */,
-				40A76DE720DC6A6B00497ABC /* Rotetable.swift */,
-				40A76DE920DC6AF700497ABC /* CollectionViewHelper.swift */,
-				40A76DEB20DC6B1300497ABC /* StoryboardHelper.swift */,
-				40A76DED20DC6B7700497ABC /* ConfigurationHelper.swift */,
-			);
-			path = ExpandingViewControllers;
-			sourceTree = "<group>";
-		};
-		40A76DDA20DC654A00497ABC /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				40A76DDB20DC655700497ABC /* DemoCollectionViewCell.xib */,
-				40A76DDD20DC65AB00497ABC /* DemoCollectionViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		40B0734C20DB184600E64BBA /* RiseAppUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +310,15 @@
 				40B0735D20DB186200E64BBA /* Info.plist */,
 			);
 			path = RiseAppTests;
+			sourceTree = "<group>";
+		};
+		40DDEB5B210666C3003C2BBF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				40DDEB5C210666D7003C2BBF /* HomeController.swift */,
+				40DDEB5E21066864003C2BBF /* HomePostCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		40EF36E020DAFC13007CA9A8 = {
@@ -399,7 +348,6 @@
 			children = (
 				40EF36F820DAFC14007CA9A8 /* Info.plist */,
 				40EF36EC20DAFC13007CA9A8 /* AppDelegate.swift */,
-				40A76DD320DC646600497ABC /* FeedOptions */,
 				405C7C1720EC1AC20040F996 /* Model */,
 				40916C1920DC5EBE00E3700B /* Controller */,
 				40916C1220DC53F300E3700B /* Storyboards */,
@@ -419,6 +367,7 @@
 				4094782F20DB1F4B00B72B78 /* Loader.swift */,
 				40916C1720DC5B1C00E3700B /* FoldingCell.swift */,
 				40A76DE320DC69EF00497ABC /* Images.swift */,
+				40DDEB58210661E8003C2BBF /* CustomImageView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -573,11 +522,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A76DD620DC64C000497ABC /* FoldingFeedStoryboard.storyboard in Resources */,
 				40EF36F720DAFC14007CA9A8 /* LaunchScreen.storyboard in Resources */,
-				40A76DD920DC652D00497ABC /* ExpandingViewControllerFeed.storyboard in Resources */,
 				404CCAAD20DB0B1600ED12C2 /* GoogleService-Info.plist in Resources */,
-				40A76DDC20DC655700497ABC /* DemoCollectionViewCell.xib in Resources */,
 				40EF36F420DAFC14007CA9A8 /* Assets.xcassets in Resources */,
 				40EF36F220DAFC13007CA9A8 /* Main.storyboard in Resources */,
 			);
@@ -619,7 +565,6 @@
 				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
-				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -634,7 +579,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -659,7 +603,6 @@
 				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
-				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -672,7 +615,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -713,7 +655,6 @@
 				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
-				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -726,7 +667,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -775,11 +715,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40916C1120DC530400E3700B /* FoldingTableViewCell.swift in Sources */,
-				40A76DE020DC661B00497ABC /* DemoViewController.swift in Sources */,
+				40DDEB59210661E8003C2BBF /* CustomImageView.swift in Sources */,
+				40DDEB5D210666D7003C2BBF /* HomeController.swift in Sources */,
 				4056EF0520EEBAB000287D42 /* Fun_LoginController.swift in Sources */,
 				4060B00020EAD5D50020AC27 /* MainTabBarController.swift in Sources */,
-				40A76DEA20DC6AF700497ABC /* CollectionViewHelper.swift in Sources */,
 				4094783720DB1FB700B72B78 /* TextFieldFormatter.swift in Sources */,
 				40BE0A6320F56BAD006D2E20 /* Post.swift in Sources */,
 				40A76DE420DC69EF00497ABC /* Images.swift in Sources */,
@@ -787,25 +726,21 @@
 				4094784B20DB1FBD00B72B78 /* AlphaNumericRule.swift in Sources */,
 				4060B00420EADC280020AC27 /* Dec_SignUpViewController.swift in Sources */,
 				4094784420DB1FBD00B72B78 /* CharacterSetRule.swift in Sources */,
-				40A76DE620DC6A3700497ABC /* AnimatingBarButton.swift in Sources */,
 				4094784720DB1FBD00B72B78 /* Validator.swift in Sources */,
+				40DDEB6121068F09003C2BBF /* FirebaseUtils.swift in Sources */,
 				40EF36EF20DAFC13007CA9A8 /* Fun_SignUpViewController.swift in Sources */,
-				40A76DEE20DC6B7700497ABC /* ConfigurationHelper.swift in Sources */,
 				4094784520DB1FBD00B72B78 /* ExactLengthRule.swift in Sources */,
 				4044A5FE20EB68B300FE4E46 /* UIView.swift in Sources */,
 				4094784920DB1FBD00B72B78 /* LuhnCheckRule.swift in Sources */,
-				40A76DE220DC669C00497ABC /* DemoTableViewController.swift in Sources */,
 				405C7C1920EC1AD20040F996 /* User.swift in Sources */,
-				40A76DEC20DC6B1300497ABC /* StoryboardHelper.swift in Sources */,
 				405C7C1620EBE2EB0040F996 /* Dec_UserProfileHeader.swift in Sources */,
-				40A76DE820DC6A6B00497ABC /* Rotetable.swift in Sources */,
 				4094783620DB1FB700B72B78 /* FormatRule.swift in Sources */,
 				401F471620F40E8A00B83784 /* Fun_SharePhotoController.swift in Sources */,
 				401F471220F3F8B100B83784 /* PhotoSelectorCell.swift in Sources */,
 				40BE0A6120F56681006D2E20 /* Dec_SharePhotoController.swift in Sources */,
 				4094783520DB1FB700B72B78 /* NumberSeperatorFormatRule.swift in Sources */,
-				40916C1620DC566100E3700B /* FeedTableViewController.swift in Sources */,
 				4094784820DB1FBD00B72B78 /* RegexRule.swift in Sources */,
+				40DDEB5F21066864003C2BBF /* HomePostCell.swift in Sources */,
 				401F471420F4058500B83784 /* PhotoSelectorHeader.swift in Sources */,
 				405C7C1B20EC1E620040F996 /* Fun_UserProfileHeader.swift in Sources */,
 				4044A60020EB68CF00FE4E46 /* UIWindow.swift in Sources */,
@@ -819,7 +754,6 @@
 				4094784C20DB1FBD00B72B78 /* Rule.swift in Sources */,
 				40BE0A6520F56D55006D2E20 /* UserProfilePostCell.swift in Sources */,
 				4094784D20DB1FBD00B72B78 /* MinimumLengthRule.swift in Sources */,
-				40A76DDE20DC65AB00497ABC /* DemoCollectionViewCell.swift in Sources */,
 				4094784A20DB1FBD00B72B78 /* EmailRule.swift in Sources */,
 				4094784E20DB1FBD00B72B78 /* AlphaRule.swift in Sources */,
 				40916C1820DC5B1C00E3700B /* FoldingCell.swift in Sources */,

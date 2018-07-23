@@ -8,7 +8,6 @@ def default_pods
     pod 'Firebase/Database'
     pod 'Firebase/Storage'
     pod 'MaterialComponents', "~> 55"
-    pod 'expanding-collection'
 end
 
 target 'RiseApp' do

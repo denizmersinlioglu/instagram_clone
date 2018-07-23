@@ -9,24 +9,6 @@
 import UIKit
 
 extension UserProfileHeader{
-    
-   func fetchProfileImage(){
-        guard let profileImageUrl = user?.profileImageUrl,
-            let url = URL(string: profileImageUrl) else {return}
-        URLSession.shared.dataTask(with: url) { (data, response, err) in
-            if let err = err{
-                print("Failed to fetch profile image", err)
-                return
-            }
-            
-            guard let data = data else {return}
-            let image = UIImage(data: data)
-            
-            DispatchQueue.main.async {
-                self.profileImageView.image = image
-            }
-            }.resume()
-    }
 
     func setupProfileImage(){
         addSubview(profileImageView)
@@ -35,9 +17,7 @@ extension UserProfileHeader{
         profileImageView.clipsToBounds = true
     }
     
-    
     func setupBottomToolbar(){
-        
         let topDividerView = UIView()
         topDividerView.backgroundColor = .lightGray
         

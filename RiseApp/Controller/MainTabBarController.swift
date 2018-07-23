@@ -22,6 +22,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
         }
         return index != 2
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +40,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
     }
     
     func setupViewControllers(){
-        let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: UserProfileController(collectionViewLayout: UICollectionViewFlowLayout()))
+        let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: HomeController(collectionViewLayout: UICollectionViewFlowLayout()))
         //Home
 //        let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"))
         
