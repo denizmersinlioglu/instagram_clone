@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class UserProfileHeader: UICollectionViewCell {
     
@@ -17,6 +18,7 @@ class UserProfileHeader: UICollectionViewCell {
             profileImageView.loadImage(urlString: profileImageUrl)
             guard let username = user?.username else {return}
             usernameLabel.text = username
+            setupEditFollowButton()
         }
     }
     
@@ -82,7 +84,7 @@ class UserProfileHeader: UICollectionViewCell {
         return label
     }()
     
-    let editProfileButton: UIButton = {
+    lazy var editProfileFollowButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Edit Profile", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -90,9 +92,48 @@ class UserProfileHeader: UICollectionViewCell {
         button.layer.borderColor = UIColor.lightGray.cgColor
         button.layer.borderWidth = 1
         button.layer.cornerRadius = 3
+        button.addTarget(self, action: #selector(handleEditFollow), for: .touchUpInside)
         return button
     }()
     
+    @objc func handleEditFollow(){
+        guard let currentUserId = Auth.auth().currentUser?.uid else {return}
+        guard let userId = user?.uid else {return}
+        
+        let values =  [userId: editProfileFollowButton.titleLabel?.text == "Unfollow" ? 0 : 1]
+        let ref = Database.database().reference().child("following").child(currentUserId)
+        ref.updateChildValues(values) { (err, ref) in
+            if let err = err{
+                print("failed to follow user ", err)
+            }
+            guard let title = self.editProfileFollowButton.titleLabel?.text else {return}
+            self.setupEditFollowButtonUI(isFollowing: !(title == "Unfollow"))
+            print("succesfully followed the user :", self.user?.username ?? "")
+        }
+    }
+    
+    fileprivate func setupEditFollowButton(){
+        guard let currentUserId = Auth.auth().currentUser?.uid,
+            let userId = user?.uid else {return}
+        guard currentUserId != userId else {return}
+        Database.database().reference().child("following").child(currentUserId).child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let value = snapshot.value as? Int{
+                 self.setupEditFollowButtonUI(isFollowing: value == 1)
+            }else{
+                 self.setupEditFollowButtonUI(isFollowing: false)
+            }
+        }) { (err) in
+            print("failed to check if following", err)
+        }
+    }
+    
+    fileprivate func setupEditFollowButtonUI(isFollowing: Bool){
+        editProfileFollowButton.setTitle(isFollowing ? "Unfollow" : "Follow" , for: .normal)
+        editProfileFollowButton.backgroundColor = isFollowing ? .white : UIColor.rgb(red: 17, green: 154, blue: 237)
+        editProfileFollowButton.setTitleColor(isFollowing ? .black : .white, for: .normal)
+        editProfileFollowButton.layer.borderColor = UIColor(white: 0, alpha: 0.2).cgColor
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupProfileImage()
@@ -105,5 +146,4 @@ class UserProfileHeader: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }

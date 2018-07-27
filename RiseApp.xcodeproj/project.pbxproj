@@ -56,6 +56,8 @@
 		40EF36F420DAFC14007CA9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F320DAFC14007CA9A8 /* Assets.xcassets */; };
 		40EF36F720DAFC14007CA9A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EF36F520DAFC14007CA9A8 /* LaunchScreen.storyboard */; };
 		40EF370020DB0412007CA9A8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF36FF20DB0412007CA9A8 /* String.swift */; };
+		40F7382D210B84CE0019367D /* UserSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7382C210B84CE0019367D /* UserSearchController.swift */; };
+		40F7382F210B8A7E0019367D /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7382E210B8A7E0019367D /* UserSearchCell.swift */; };
 		59BDD5F766028EC53A5F27E0 /* Pods_RiseAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB75B8DDB24CD6EB1E40B23 /* Pods_RiseAppTests.framework */; };
 		D896F8E1E99E2EE27AFCBFB6 /* Pods_RiseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BA7E3CE5FDDF77C9760A7 /* Pods_RiseAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -135,6 +137,8 @@
 		40EF36F620DAFC14007CA9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40EF36F820DAFC14007CA9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40EF36FF20DB0412007CA9A8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		40F7382C210B84CE0019367D /* UserSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchController.swift; sourceTree = "<group>"; };
+		40F7382E210B8A7E0019367D /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
 		4C891A39D34EADFB3AF32BC0 /* Pods-RiseAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseAppTests/Pods-RiseAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		521682182D645062AED7E1E0 /* Pods-RiseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseApp/Pods-RiseApp.release.xcconfig"; sourceTree = "<group>"; };
 		616BA7E3CE5FDDF77C9760A7 /* Pods_RiseAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +251,7 @@
 		40916C1920DC5EBE00E3700B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				40F7382B210B84BB0019367D /* Search */,
 				40DDEB5B210666C3003C2BBF /* Home */,
 				405498B920EEC8D6002D5629 /* AddPhoto */,
 				4056EF0120EEB32800287D42 /* Login */,
@@ -370,6 +375,15 @@
 				40DDEB58210661E8003C2BBF /* CustomImageView.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		40F7382B210B84BB0019367D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				40F7382C210B84CE0019367D /* UserSearchController.swift */,
+				40F7382E210B8A7E0019367D /* UserSearchCell.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		5F461946341775E6C0A9B767 /* Pods */ = {
@@ -723,6 +737,7 @@
 				40BE0A6320F56BAD006D2E20 /* Post.swift in Sources */,
 				40A76DE420DC69EF00497ABC /* Images.swift in Sources */,
 				40EF370020DB0412007CA9A8 /* String.swift in Sources */,
+				40F7382F210B8A7E0019367D /* UserSearchCell.swift in Sources */,
 				4094784B20DB1FBD00B72B78 /* AlphaNumericRule.swift in Sources */,
 				4060B00420EADC280020AC27 /* Dec_SignUpViewController.swift in Sources */,
 				4094784420DB1FBD00B72B78 /* CharacterSetRule.swift in Sources */,
@@ -737,6 +752,7 @@
 				4094783620DB1FB700B72B78 /* FormatRule.swift in Sources */,
 				401F471620F40E8A00B83784 /* Fun_SharePhotoController.swift in Sources */,
 				401F471220F3F8B100B83784 /* PhotoSelectorCell.swift in Sources */,
+				40F7382D210B84CE0019367D /* UserSearchController.swift in Sources */,
 				40BE0A6120F56681006D2E20 /* Dec_SharePhotoController.swift in Sources */,
 				4094783520DB1FB700B72B78 /* NumberSeperatorFormatRule.swift in Sources */,
 				4094784820DB1FBD00B72B78 /* RegexRule.swift in Sources */,
